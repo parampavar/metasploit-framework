@@ -76,7 +76,7 @@ Gem::Specification.new do |spec|
   # Needed for Meterpreter
   spec.add_runtime_dependency 'metasploit-payloads', '2.0.221'
   # Needed for the next-generation POSIX Meterpreter
-  spec.add_runtime_dependency 'metasploit_payloads-mettle', '1.0.35'
+  spec.add_runtime_dependency 'metasploit_payloads-mettle', '1.0.42'
   # Needed by msfgui and other rpc components
   # Locked until build env can handle newer version. See: https://github.com/msgpack/msgpack-ruby/issues/334
   spec.add_runtime_dependency 'msgpack', '~> 1.6.0'
@@ -271,6 +271,7 @@ Gem::Specification.new do |spec|
     mutex_m
     ostruct
     rinda
+    syslog
   ].each do |library|
     spec.add_runtime_dependency library
   end
